@@ -1,0 +1,21 @@
+Run 'make all', also 'make -i' to see errors in two compilations.
+
+Useful thoughts:
+
+- Regarding Makefile:
+
+http://stackoverflow.com/questions/9787160/
+makefile-that-compiles-all-cpp-files-in-a-directory-into-separate-executable
+
+This motivated the creation of a makefile that compiles each separate *.cpp file
+into a separate *.out.
+
+- Contents inpired from:
+"Understanding lvalues and rvalues in C and C++"
+http://eli.thegreenplace.net/2011/12/15/
+understanding-lvalues-and-rvalues-in-c-and-c/
+
+
+The following are not SUPPOSED TO WORK:
+rvalue_error.cpp
+lvalue_error.cpp 
