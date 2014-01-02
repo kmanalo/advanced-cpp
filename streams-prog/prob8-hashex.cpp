@@ -22,6 +22,9 @@ bool HasHexLetters(int num){
     string result( stream.str() );
     cout << "Hex String is:" << result << endl;
     bool isAlpha = all( result, boost::algorithm::is_alpha());
+    cout << "Hex contains ONLY letters? " << boolalpha << isAlpha << endl;
+    isAlpha = count_if(result.begin(),result.end(),[](char c)
+        { return (isalpha(c)); });
     cout << "Hex contains letters? " << boolalpha << isAlpha << endl;
 
 }
