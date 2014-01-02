@@ -1,4 +1,5 @@
 #Tell make to make one .out file for each .cpp file found in the current directory
+
 all: 
 	@echo run with \'make prog\'
 	@echo clean with \'make clean\'
