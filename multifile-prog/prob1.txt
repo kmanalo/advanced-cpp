@@ -1,0 +1,13 @@
+
+List 3 major differences between #define and const:
+
+Const is a C++ statement, #define is a macro that is effectively a
+search-and-replace within the cpp file prior to compilation.
+
+#define can be extended for use as a macros, which are expansions of C++ code
+during preprocessing, const is interpreted strictly as a constant expression and
+does not permit macro-style behavior.
+
+const is interpreted within the C++ compiler, and as such behaves properly with
+operator precedence, whereas #define expressions need further parenthetical
+surrounds to prevent improper operator precedence error.
