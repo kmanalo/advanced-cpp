@@ -25,6 +25,7 @@ bool to_bool(string str) {
     bool b;
     is >> boolalpha >> b;
     return b;
+    nasd
 }
 
 float GetBoolean() {

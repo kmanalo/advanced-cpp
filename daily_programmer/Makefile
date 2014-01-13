@@ -1,9 +1,9 @@
 #Tell make to make one .out file for each .cpp file found in the current directory
 
-#all: 
-#	@echo run with \'make prog\'
-#	@echo clean with \'make clean\'
-all: $(patsubst %.cpp, %.out, $(wildcard *.cpp))
+all: 
+	@echo run with \'make prog\'
+	@echo clean with \'make clean\'
+prog: $(patsubst %.cpp, %.out, $(wildcard *.cpp))
 
 #Rule how to create arbitary .out files. 
 #First state what is needed for them e.g. additional headers, .cpp files in an include folder...
